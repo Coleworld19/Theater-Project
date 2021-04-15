@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: rgb(204, 116, 83);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: red;
+}
+
+.header h1 {
+  font-size: 100px;
+  color: white;
+  font-family: lobster;
+
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(14, 11, 5);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:orangered;
+  color:white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color:rgb(204, 116, 83);
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(182, 166, 182);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:black;
+  margin-top: 20px;
+}
+h3{
+  color:white
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.header {
+        background-image: url("https://www.psdvault.com/img/2016/04/future-city-web.jpg");
+        height: 300px;
+        background-position: center;
+}
+p{
+  color:white
+}
+h2{
+  color:whitesmoke
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> Welcome to Cole's World</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Linkedin</a>
+  <a href="#">Resume</a>
+  <a href="#">Git</a>
+  <a href="#" style="float:right"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Biography</h2>
+      <img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg" alt="computers" width=500px;>
+      <p>I am a Full Stack Developer in traning. I am taking Coding Temples Bootcamp to devolpe my skills and become an elite web deveolper. Right now i dont have alot of experince so i cant really fill this part out but when i do i will right paragraghs about my self and why you should hire me. Thank You peace and love.</p>
+    </div>
+    <div class="card">
+      <div class="fakeimg"><p>Project Link</p></div>
+      <div class="fakeimg"><p>Project Link</p></div>
+      <div class="fakeimg"><p>Project Link</p></div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <a href="#"><img src="https://generocity.org/philly/wp-content/uploads/sites/2/2017/10/Philadelphia-Skyline-colors-VISIT-R.-Kennedy.jpg" alt="Philly" width='350px'></a>
+      <p> I am 27 years old and live in the city of Philadelphia. Im orginally from Manhattan, New York. </p>
+    </div>
+    <div class="card">
+      <h3>A little bit more about me..</h3>
+      <p>Hobbies</p>
+      <p>Some of my hobbies include playing and watching sports. I also enjoying Collecting Sports trading cards. </p>
+    </div>
+    <div class="card">
+      <h3>Contact Me</h3>
+      <p>Email Link</p>
+      <p>Phone Number</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+</body>
+</html>
