@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+ 
+  .container {
+    width:500px !important;
+    margin: 10px ;
+  }
+
+
+ 
+ 
+</style>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--Starting Point for our Grid-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!--Column(s) for Amazon Logo-->
+        <img src="http://www.clickbank.com/wp-content/uploads/2016/05/amazon_logo.png" alt="Amazon" class="center" height=100px>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h1>Sign-In</h1>
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email (phone for mobile accounts)</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+        <div class="col"><label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text"></div>
+          <div class="col">
+            <div class="container">
+              <button type="button" class="btn btn-warning btn-large">Sign-In</button> 
+              <div class=col>
+                <h4>By continuing, you agree to Amazon's Condtions of Use and Privacy Notice</h4>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Keep Me Signed in, Details</label>
+            </div>
+            <div class="container">
+              <button type="button" class="btn btn-Basic btn-lg">Create your Amazon account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
